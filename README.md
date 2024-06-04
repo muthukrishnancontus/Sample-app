@@ -8,9 +8,13 @@ When it comes to the client-side implementation, you can initialize and configur
 
 > **Note :** If you're looking for the fastest way in action with CONTUS MirrorFly <a href="https://www.mirrorfly.com/chat-api-solution.php" target="_self">Chat SDKs</a>, then you need to build your app on top of our sample version. Simply download the sample app and commence your app development. To download sample app <a href="https://github.com/MirrorFly/-MirrorFly-Android-Sample-V2" target="_blank">click here</a>
 
+## Before getting started
+
+This section shows you the prerequisites you need for testing **Mirrorfly UIKit** for Android sample apps.
 
 ### Requirements
-The requirements for chat SDK for Android are:
+The minimum requirements for UIKit for Android are:
+
 ```groovy
 - Android Lollipop 5.0 (API Level 21) or above
 - Java 7 or higher
@@ -18,7 +22,8 @@ The requirements for chat SDK for Android are:
 ```
 > **Note :** If you're utilizing Chat SDK version 7.11.4 or higher, it's necessary to adjust the target SDK version to 34. This is due to the migration of Chat SDK to Android 14.
 
-### Integrate the Chat SDK
+## Getting started
+This section explains the steps you need to take before testing the sample apps.
 
 **Step 1:** Create a new project or Open an existing project in Android Studio
 
