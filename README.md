@@ -1,19 +1,14 @@
-# Mirrorfly UIKit for Android
+# Mirrorfly Sample App
 
-### Chat SDKs for Android
-
-With CONTUS MirrorFly <a href="https://www.mirrorfly.com/docs/chat/android/v3/quick-start/" target="_self">Chat SDK for Android</a>, you can efficiently integrate the desired real-time chat features into a client app.
-
-When it comes to the client-side implementation, you can initialize and configure the chat with minimal efforts. With the server-side, MirrorFly ensures reliable infra-management services for the chat within the app. This page will let you know how to install the chat SDK in your app.
-
-> **Note :** If you're looking for the fastest way in action with CONTUS MirrorFly <a href="https://www.mirrorfly.com/chat-api-solution.php" target="_self">Chat SDKs</a>, then you need to build your app on top of our sample version. Simply download the sample app and commence your app development. To download sample app <a href="https://github.com/MirrorFly/-MirrorFly-Android-Sample-V2" target="_blank">click here</a>
+### Overview
+Our sample app  provides basic UI integrated with latest Mirrorfly SDK where you can  customize and build your own app easily.
 
 ## Before getting started
 
-This section shows you the prerequisites you need for testing **Mirrorfly UIKit** for Android sample apps.
+This section shows you the prerequisites you need for testing **Mirrorfly Sample App**.
 
 ### Requirements
-The minimum requirements for UIKit for Android are:
+The minimum requirements for the Sample App:
 
 ```groovy
 - Android Lollipop 5.0 (API Level 21) or above
@@ -69,4 +64,19 @@ dependencies {
    ```xml
    <uses-permission android:name="android.permission.INTERNET" />
    ```
+**Step 6:** To log in and run the app, you need to add the **LICENCSE** key in the app/build.gradle file. To generate the license key, you need to sign up in the <a href="https://console.mirrorfly.com/" target="_self">MirrorFly console</a>, and you can get it from there.
+   ```gradle
+        debug {
+            buildConfigField 'Boolean', 'IS_QA_BUILD', 'true'
+            buildConfigField 'String', 'LICENSE', '"Please enter your License key"' // add your license key
+            buildConfigField 'String', 'WEB_CHAT_LOGIN', '"https://webchat-preprod-sandbox.mirrorfly.com/"'
+            buildConfigField "String", "SUPPORT_MAIL", '"contussupport@gmail.com"'
+            resValue("string", "app_name", "UI Kit")
+            shrinkResources false
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+```
 After saving your build.gradle file, click the Sync button to apply all the changes.
