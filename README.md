@@ -1,14 +1,14 @@
 # Mirrorfly Sample App
 
-### Overview
-Our sample app  provides basic UI integrated with latest Mirrorfly SDK where you can  customize and build your own app easily.
+## Overview
+Our sample app provides basic UI integrated with latest Mirrorfly SDK where you can customize and build your own app easily.
 
 ## Before getting started
 
 This section shows you the prerequisites you need for testing **Mirrorfly Sample App**.
 
 ### Requirements
-The minimum requirements for the Sample App:
+The minimum requirements to run the Sample App:
 
 ```groovy
 - Android Lollipop 5.0 (API Level 21) or above
@@ -18,7 +18,7 @@ The minimum requirements for the Sample App:
 > **Note :** If you're utilizing Chat SDK version 7.11.4 or higher, it's necessary to adjust the target SDK version to 34. This is due to the migration of Chat SDK to Android 14.
 
 ## Getting started
-This section explains the steps you need to take before testing the sample apps.
+This section explains the steps you need to take before testing the sample app.
 
 **Step 1:** Create a new project or Open an existing project in Android Studio
 
